@@ -1,13 +1,13 @@
 # Preliminary
 
 # Set working directory to UCI HAR Dataset folder
-setwd("C:/Users/BorisBocharov/Desktop/Data Science Coursera/Data Cleaning/Week 4/Project/UCI HAR Dataset")
+# setwd("C:/Users/BorisBocharov/Desktop/Data Science Coursera/Data Cleaning/Week 4/Project/UCI HAR Dataset")
 #getwd()
 
 #Fetch descriptive names of variables and activities
-filename <- "features.txt"
+filename <- "./UCI HAR Dataset/features.txt"
 var_names <- read.table(filename,header=FALSE, sep="")
-filename <- "activity_labels.txt"
+filename <- "./UCI HAR Dataset/activity_labels.txt"
 Act_names <- read.table(filename,header=FALSE, sep="")
 
 #re-name activities
@@ -16,11 +16,11 @@ Act_names[,2] <- c("Walk", "Walk_Up", "Walk_Dn", "Sit", "Stand", "Lay")
 # Create Train Dataset 
 
 # Download
-filename <- "./train/X_train.txt"
+filename <- "./UCI HAR Dataset/train/X_train.txt"
 X_train <- read.table(filename,header=FALSE, sep="")
-filename <- "./train/y_train.txt"
+filename <- "./UCI HAR Dataset/train/y_train.txt"
 y_train <- read.table(filename,header=FALSE, sep="") 
-filename <- "./train/subject_train.txt"
+filename <- "./UCI HAR Dataset/train/subject_train.txt"
 SubjectID_train <- read.table(filename,header=FALSE, sep="")
 
 # Check dimensions
@@ -35,11 +35,11 @@ colnames(Data_train) <- c(as.character(var_names[,2]),"Response", "Subject")
 # Create Test Dataset 
 
 # Download
-filename <- "./test/X_test.txt"
+filename <- "./UCI HAR Dataset/test/X_test.txt"
 X_test <- read.table(filename,header=FALSE, sep="")
-filename <- "./test/y_test.txt"
+filename <- "./UCI HAR Dataset/test/y_test.txt"
 y_test <- read.table(filename,header=FALSE, sep="") 
-filename <- "./test/subject_test.txt"
+filename <- "./UCI HAR Dataset/test/subject_test.txt"
 SubjectID_test <- read.table(filename,header=FALSE, sep="")
 
 # Check dimensions
