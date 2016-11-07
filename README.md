@@ -47,4 +47,15 @@ The repo includes the following files:
 - 'Tidy_dataset.txt': Shows information about the variables used on the feature vector.
 
 ====================================================================================================================
+ 
+ STEPS.
+ 
+ It is assumed that the dataset (UCI HAR Dataset) has been saved to your working directory.
+ 
+ Open the "run_analysis.R" script and make sure that the package "reshape2" is installed. Then, run the script
+ (well-commented and pretty self-explanatory) in its entirety. The output will be the "Tidy_dataset.txt" files, stored,
+ again, in the working directory.
+ 
+ ====================================================================================================================
 
+ 
