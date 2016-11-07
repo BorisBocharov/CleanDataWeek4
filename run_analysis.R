@@ -1,5 +1,8 @@
 # Preliminary
 
+# Install reshape package, if not done already!
+library(reshape2)
+
 # Set working directory to UCI HAR Dataset folder
 setwd("C:/Users/BorisBocharov/Desktop/Data Science Coursera/Data Cleaning/Week 4/Project")
 #getwd()
